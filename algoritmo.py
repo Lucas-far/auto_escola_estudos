@@ -1,6 +1,7 @@
 
 
 from random import choice as ch
+from metodos.bdd import mtd_paint_random as ink
 
 skip = ':\n'
 
@@ -81,8 +82,55 @@ questions = [
     apresentação de condutor habilitado e recolhimento do documento de habilitação, quando o condutor dirigir sob a
     influência de álcool em nível superior a""",
 
-    f'Diante da placa (A-35) (placa amarela com uma vaca indo para à esquerda), você entende que nesta área'
-]
+    f'Diante da placa (A-35) (placa amarela com uma vaca indo para à esquerda), você entende que nesta área{skip}',
+    f'Qual dos equipamentos indicados é obrigatório?{skip}',
+    f'O orgão máximo normativo do sistema nacional de trânsito é{skip}',
+
+    f"Os sinais de trânsito, além de serem inscritos em placas e pintados no leito da via pública, podem ainda ser{skip}",
+    f'Quando o condutor estacionar o veículo nos viadutos, pontes e túneis será punido com{skip}',
+    f'Estão previstas quatro categorias de infração. Cada uma coresponde a um certo número de pontos. Para a infração{skip}',
+    f'Aplicar boas relações humanas no trânsito é também{skip}',
+
+    f"""
+    Dirigindo um veículo, o condutor que encontrar crianças, pessoas idosas ou deficientes físicos atravessando a via,
+    deve{skip}""",
+
+    f"""
+    O condutor e os passageiros não deverão abrir a porta do veículo, nem deixá-la aberta ao descer do veículo, sem
+    antes{skip}""",
+
+    f'O passageiro tenta irritá-la com uma discussão. Nessa situação, você{skip}',
+    f'O condutor após passar sobre uma via alagada, deve testar a{skip}',
+
+    f"""
+    Ao chegar a um cruzamento não semaforizado e dotado de faixas de pedestres, você encontra uma mãe com um carrinho de
+    bebê querendo fazer a travessia. Nessa situação você{skip}""",
+
+    f'O que se deve fazer ao acender a luz do manômetro no painel?{skip}',
+    f'Você está atrasado, saindo da garagem de um prédio, à noite. Você{skip}',
+
+    f"""
+    É impossível você desviar e seu veículo passa por um buraco grande de uma via em obras. Mais adiante, você nota 
+    alguns ruídos diferentes no veículo. Nessa situação você{skip}""",
+
+    f'Ao atravessar uma passagem de nível com uma ferrovia, sem cancela, você dev{skip}e',
+
+    f"""
+    Você acabou de almoçar e está com muito sono. Para chegar ao seu destino, há ainda um longo caminho pela frente. 
+    Nessa situação você{skip}""",
+
+    f"""
+    Verificar se o espaço é suficiente, sinalizar com antecedência e retornar à faixa anterior, são procedimentos para
+    executar uma{skip}""",
+
+    f"""
+    O veículo que você dirige tem sinal verde para atravessar o cruzamento, o condutor de outro veículo desobedece à
+    sinalização e colide com o seu veículo. Neste acidente sem vítimas, deve-se{skip}""",
+
+    f'Você percebe que o freio do seu veículo está baixo. O comportamento seguro é{skip}',
+    f'No uso correto do freio de estacionamento de seu veículo, você deve{skip}'
+
+]  # end
 
 options = []
 
@@ -99,7 +147,7 @@ answers = [
     'Parar, a menos que isto resulte em situação de perigo para os veículos que vêm atrás',
     'Obrigatório apenas para caminhões, micro-ônibus, ônibus e veículos que transportam produtos inflamáveis',
     'Só é permitido que você siga em frente',
-    'O pro prietário do veículo',
+    'O proprietário do veículo',
     'Manter a atenção, reduzir a marcha do seu veículo e parar',
     'Facilitar-lhe a passagem pelo lado esquerdo da via',
     'Vias locais, coletoras, arteriais e de trânsito rápido',
@@ -118,16 +166,86 @@ answers = [
     'Multa',
     'Qualquer concentração de álcool por litro de sangue',
     'Poderá encontrar animais na pista',
-]
+    'O para-choque',
+    'O conselho nacional de trânsito (CONTRAN)',
+    'Luminosos, sonoros e por gestos',
+    'Remoção do veículo e multa',
+    'Média são computados quatro pontos',
+    'Ser tolerante com os erros dos outros, priorizando sempre o aspecto segurança',
+    'Parar o veículo e facilitar a travessia',
+    'Se certificarem de que isso não constitui perigo para eles e para adultos usuários da via',
+    'Desconsidera a fala do outro, respira fundo e continua seu trajeto com atenção',
+    'Eficiência dos freios, acionando o pedal com simples toques',
+    'Sinaliza para e permite a travessia dos pedestres',
+    'Parar o veículo em local seguro e verificar o nível do óleo',
+    'Dá farol alto, para antes da calçada e segue com a certeza de que não há pedestres',
+    'Segue com cuidado e atenção redobrados e leva o veículo à oficina de sua confiança',
+    'Para o veículo, olhar para ambos os lados e efetuar cruzamento com segurança',
+    'Permanece no local do almoço até se sentir em condições para prosseguir',
+    'Ultrapassagem segura',
+    'De comum acordo, retirar os veículos para local seguro, anotar a placa do veículo envolvido e dados do outro ' + \
+    'condutor, arrolando testemunhas',
+    'Procurar imediatamente uma oficina mecânica',
+    'Puxar a alavanca sem forçar além do necessário'
 
-question = ch(questions)
-answer_official_index = questions.index(question)
-answer_official = answers[answer_official_index]
+]  # end
 
-print(len(questions), len(answers))
-# answer = str(input(question))
-# print([1], answer_official_index)
-# print([2], answer_official)
+# question = ch(questions)
+# answer_official_index = questions.index(question)
+# answer_official = answers[answer_official_index]
+# print(len(questions), len(answers))
 
-# print(answer == answer_official)
-# print(questions.index())
+score_positive, score_negative = 0, 0
+
+while True:
+
+    question = ch(questions)
+    answer_official_index = questions.index(question)
+    answer_official = answers[answer_official_index]
+
+    box = set({})
+    box.add(answer_official)
+
+    while len(box) < 5:
+        box.add(ch(answers))
+
+    box = list(box)
+    # print(box)
+
+    thread = f"""
+    ----------------------------------------------------- PERGUNTA -----------------------------------------------------
+    {ink(label=question)}\n
+    a) {box[0]}
+    b) {box[1]}
+    c) {box[2]}
+    d) {box[3]}
+    e) {box[4]} 
+    
+    DIGITE A ALTERNATIVA APÓS A SETA -------> """
+
+    answer_correct = f"""
+    ----------------------------------------------- ALTERNATIVA CORRETA -----------------------------------------------
+    {ink(label=answer_official)}"""
+
+    answer = str(input(thread))
+
+    conditions = {
+        'a': box[0], 'b': box[1], 'c': box[2], 'd': box[3], 'e': box[4],
+    }
+
+    for key in conditions:
+        if answer == key:
+            answer = conditions[key]
+
+    if answer == answer_official:
+        score_positive += 1
+    else:
+        score_negative += 1
+        print(answer_correct)
+
+    score_now = f"""
+    ---------------------------------------------------- PONTUAÇÃO ----------------------------------------------------
+    Acertos || {ink(label=str(score_positive))}
+    Erros   || {ink(label=str(score_negative))}"""
+
+    print(score_now)
