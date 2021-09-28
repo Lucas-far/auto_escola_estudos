@@ -128,7 +128,77 @@ questions = [
     sinalização e colide com o seu veículo. Neste acidente sem vítimas, deve-se{skip}""",
 
     f'Você percebe que o freio do seu veículo está baixo. O comportamento seguro é{skip}',
-    f'No uso correto do freio de estacionamento de seu veículo, você deve{skip}'
+    f'No uso correto do freio de estacionamento de seu veículo, você deve{skip}',
+    f'O condutor que se preocupa em avisar ao outro que o pneu do seu veículo está murcho{skip}',
+    f'Ao dirigir na cidade você quer fazê-lo com segurança, facilidade e rapidez. Para tanto você deve{skip}',
+    f'Conhecer a cidade é um requisito essencial para uma circulação segura e funcional. Logo, você deve conhecer{skip}',
+    f'Você e seus amigos vão comemorar a entrada do Ano Novo numa discoteca. Nessa situação, você{skip}',
+    f'Você ouve, ao pisar no pedal do freio, um ruído semelhante ao barulho de atrito entre metais. Você{skip}',
+    f'Nenhum condutor deverá frear bruscamente o veículo, salvo{skip}',
+
+    f"""
+    Quando ocorrer o afundamento do pedal de freio além da metade da distância entre a sua posição normal e o chão do
+    veículo, você deve, primeiramente, verificar o nível de flúido de freio no reservatório. Se o nível estiver correto,
+    você deve{skip}""",
+
+    f'É dever do condutor de transporte coletivo{skip}',
+    f'O condutor para dirigir com segurança, deve{skip}',
+    f'Caso o filtro de ar seco esteja muito sujo, deve-se{skip}',
+
+    f"""
+    Trafegando em uma via, você se depara com um guarda de trânsito orientando os condutores a efetuarem um desvio. 
+    Neste caso você deve""",
+
+    f'Um cuidado com a bateria do veículo (válido para a maioria dos modelos - bateria não selada) é a{skip}',
+    f'Assumir um comportamento seguro significa{skip}',
+    f'O condutor acabou de ser demitido do seu emprego. Ele deve{skip}',
+    f'Na necessidade de efetuar a troca de uma peça do sistema de freios do seu veículo, é aconselhável{skip}',
+    f'Os riscos que podem ser oferecidos pelo veículo estão relacionados{skip}',
+    f'Tendo verificado que é necessário completar o nível de água da bateria de seu veículo, você coloca{skip}',
+
+    f"""
+    Você está numa via de trânsito rápido com fluxo grande, a uma velocidade média de 60km/h. O veículo à sua frente 
+    derrapa e freia brsucamente. Nessa situação você{skip}""",
+
+    f'Em direção defensiva, HABILIDADE significa{skip}',
+
+    f"""
+    O condutor de veículo automotor envolvido em acidente de trânsito, sendo considerado culpado, além da punição que
+    lhe for aplicável ou aplicada, deverá ser submetida a exames de aptidão física e mental, noções de primeiros 
+    socorros e ainda a{skip}""",
+
+    f'A única forma de eliminar o álcool do organismo é{skip}',
+
+    f'Quando algém sofre um traumatismo e desmaia, o que é mais perigoso e comum em causar obstrução das vias áereas?{skip}',
+    f'A baixa calibragem dos pneus pode causar{skip}',
+    f'Uma das peças fundamentais do sistema de arrefecimento é{skip}',
+    f'O condutor que avistar uma poça de água deverá{skip}',
+    f'Que atitude deve-se tomar quando alguém que sofreu acidente e necessita de socorro é portador do vírus da AIDS?{skip}',
+
+    f"""
+    Linhas transversais inscritas na cor branca que através de efeito visual, estimulamos condutores a reduzirem a 
+    velocidade, chamam-se linhas de estímulo{skip}""",
+
+    f'Em caso de acidente{skip}',
+    f'Qual o método mais indicado para conter uma hemorragia externa?{skip}',
+    f'A finalidade do óleo lubrificante do motor é{skip}',
+    f'Diante da placa (A-31) (Placa amarela com boneco dirigindo um trator para a <-) você entende que nesta área{skip}',
+    f'Os gases emitidos pelos veículos são perigosos para à saúde do homem porque podem{skip}',
+    f'A realização de qualquer ato público que interfira no trânsito depende de{skip}',
+
+    f"""
+    Quando o condutor precisa tomar um medicamento que produz um efeito de sonolência, é de sua responsabilidade e para
+    a sua segurança{skip}""",
+
+    f"""
+    Em um acidente a vítima está dentro do veículo que tem fumaça em seu interior. Nessa situação, o que fazer após
+    chegar a conclusão que não há risco pessoal?{skip}""",
+
+    f'A inspeção de Segurança Veicular (nos estados com obrigatoriedade) tem por objetivo{skip}',
+    f'As infrações previstas no Código Brasileiro de Trânsito são de natureza{skip}',
+    f'Quando o veículo estiver estacionado impedindo a movimentação de outro veículo, o condutor será punido com{skip}',
+    f'O flúido do freio deve ser trocado periodicamente porque{skip}',
+    f'Os poluentes do ar especificados pelo Código de Trânsito Brasileiro são{skip}'
 
 ]  # end
 
@@ -151,7 +221,7 @@ answers = [
     'Manter a atenção, reduzir a marcha do seu veículo e parar',
     'Facilitar-lhe a passagem pelo lado esquerdo da via',
     'Vias locais, coletoras, arteriais e de trânsito rápido',
-    'Transitar com o veículo produzindo fumaça, gases ou particular em níveis superiores aos fixados pelo CONTRAN',
+    'Transitar com o veículo produzindo fumaça, gases ou partículas em níveis superiores aos fixados pelo CONTRAN',
     'Atirar objetos ou substâncias de dentro do veículo ou abandoná-los na via',
     'Mais estreita que a pista de rolamento',
     'Transitar na faixa da direita',
@@ -186,7 +256,47 @@ answers = [
     'De comum acordo, retirar os veículos para local seguro, anotar a placa do veículo envolvido e dados do outro ' + \
     'condutor, arrolando testemunhas',
     'Procurar imediatamente uma oficina mecânica',
-    'Puxar a alavanca sem forçar além do necessário'
+    'Puxar a alavanca sem forçar além do necessário',
+    'Age com solidariedade e cortesia',
+    'Conhecer as principais regiões e vias da cidade, vias de acesso e as diferentes vias urbanas e rodoviárias',
+    'As zonas, regiões e bairros da cidade, suas vias de acesso e vias alternativas',
+    'Combina quem não vai ingerir bebida alcoólica para dirigir na volta',
+    'Providência uma revisão das pastilhas e dos discos de freio',
+    'Por questão de segurança',
+    'Providenciar uma revisão do sistema de freios, por técnico especializado',
+    'Parar o veículo para embarque somente nos pontos estabelecidos',
+    'Estar atento a tudo que acontece no trânsito',
+    'Trocá-lo',
+    'Colaborar com o guarda e fazer o desvio, pois a autoridade de trânsito sempre deve ser respeitada',
+    'Verificação periódica do nível da água, de acordo com as recomendações do fabricante',
+    'Perceber os riscos e agir para evitá-los ou controlá-los',
+    'Manter-se tranquilo e redobrar a atenção no trânsito',
+    'Substituir por uma peça original de fábrica',
+    'As condições de funcionamento ao estado de conservação e modo de operação',
+    'Água destilada',
+    'Reduz a velocidade aos poucos e sinaliza para o condutor de trás',
+    'Manejar o veículo com perícia',
+    'Exame escrito sobre legislação de trânsito e exame de direção veicular',
+    'O tempo, pois a eliminação se dá de maneira lenta, lavando de 6 à 8 horas',
+    'A própria língua ao relaxar',
+    'Danos, desgaste, instabilidade aos pneus',
+    'A ventoinha',
+    'Desacelerar suavemente, segurar firme o volante e manter o veículo em linha reta',
+    'Prestar socorro à vítima com as devidas precauções',
+    'à redução de velocidade',
+    'é obrigação de todos prestar auxílio desde que não corra risco pessoal',
+    'Aplicar pressão direta sobre o ferimento, com uma compressa seca e limpa (acho errado)',
+    'Reduzir o atrito entre as peças',
+    'Pode encontrar máquinas agrícolas na pista',
+    'Agravar moléstias respiratórias como asma e bronquite',
+    'Previa autorização da Autoridade de Trânsito',
+    'Deixar de dirigir nesta condição',
+    'Retirar a pessoa de dentro do carro, após imobilizá-la da melhor forma possível',
+    'Contribuir para a segurança do trânsito',
+    'Gravíssima, grave, média e leve',
+    'Remoção do veículo e multa (2)',
+    'é contaminado com água',
+    'Gases'
 
 ]  # end
 
@@ -194,6 +304,16 @@ answers = [
 # answer_official_index = questions.index(question)
 # answer_official = answers[answer_official_index]
 # print(len(questions), len(answers))
+#
+# box_questions, box_answers = [], []
+# for string in questions:
+#     box_questions.append(questions.count(string))
+#
+# for string in answers:
+#     box_answers.append(answers.count(string))
+#
+# print(2 in box_questions)
+# print(2 in box_answers)
 
 score_positive, score_negative = 0, 0
 
@@ -219,8 +339,8 @@ while True:
     b) {box[1]}
     c) {box[2]}
     d) {box[3]}
-    e) {box[4]} 
-    
+    e) {box[4]}
+
     DIGITE A ALTERNATIVA APÓS A SETA -------> """
 
     answer_correct = f"""
